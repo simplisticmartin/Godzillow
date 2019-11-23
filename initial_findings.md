@@ -1,6 +1,6 @@
-#Team Name: GodZillow
-#Members: Jon Tran, Martin, Kieran, Enger
-###Part 1:
+ #Team Name: GodZillow
+ #Members: Jon Tran, Martin, Kieran, Enger
+ ###Part 1:
  We are using linear regression model to obtain our mean square error. We used heat map to find the best features for the prediction model. We selected best correlated features with rent. The features that were mostly correlated were bathroom, square footage, bin, bbl, has_doormen and floor_count and least correlated with one another as possible. We eliminated bedroom because we want to prevent collinearity As much as possible. It was eliminated because it was correlated than bathroom. The mean squared error results in 3403664.674.
 Using the simple Linear Regression Equation we are using
 -  Y = A + B * X
@@ -10,7 +10,7 @@ Using the simple Linear Regression Equation we are using
 ![alt text](img/coeff.png "coefficient results")
  - These are our trained weights in our model which gave us the lowest residual square errors. The model’s final weights are listed above, along with the intercept. Jon’s terminology: Sum of squared errors
  
-#####Now we  calculate the mean squared error 
+ #####Now we  calculate the mean squared error 
 We are looking for residuals in the data between different data features with the already predicted rent. 
 ![alt-text](https://cdn-media-1.freecodecamp.org/images/hmZydSW9YegiMVPWq2JBpOpai3CejzQpGkNG "The formula to calculate mean squared error")
 
@@ -22,7 +22,7 @@ Pearson's Coefficient:
 ![alt-text](https://wikimedia.org/api/rest_v1/media/math/render/svg/f76ccfa7c2ed7f5b085115086107bbe25d329cec "Pearson's Coefficient")
 
 
-###Part 2:
+ ###Part 2:
 To improve our prediction, we plan to incorporate data about racial and social constitution of the area. There is a common trend of gentrification in many New York City neighborhoods. As wealthier social and racial classes move into an area, they are likely willing to pay more for rent than the people living in that area previously, thus driving up the rent. In consequence to this, the previous occupants of a neighborhood wouldn’t be able to keep up with this increased cost, and be forced to move out. We think that this would make data pertaining to race and class distribution helpful in predicting rent prices. 
   
 We also plan to evaluate all of our features and determine which ones yield the best models. On top of this, we will consider other models altogether to build off of, such as a k nearest neighbors model. We hope that by exploring other models, we may find one which will best suit our data.
