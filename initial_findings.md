@@ -1,6 +1,9 @@
- #Team Name: GodZillow
- #Members: Jon Tran, Martin, Kieran, Enger
- ###Part 1:
+#Team Name: GodZillow
+
+#Members: Jon Tran, Martin, Kieran, Enger
+
+###Part 1:
+
  We are using linear regression model to obtain our mean square error. We used heat map to find the best features for the prediction model. We selected best correlated features with rent. The features that were mostly correlated were bathroom, square footage, bin, bbl, has_doormen and floor_count and least correlated with one another as possible. We eliminated bedroom because we want to prevent collinearity As much as possible. It was eliminated because it was correlated than bathroom. The mean squared error results in 3403664.674.
 Using the simple Linear Regression Equation we are using
 -  Y = A + B * X
