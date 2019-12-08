@@ -29,4 +29,10 @@ Filling the null values lowered the mse for linear regression but increased it f
 
 - There is an ethical problem with high income demographics moving into low income areas. Populations that until recent years paid lower rents because of their lower income suddenly have to pay more in rent because of higher income populations moving in. This is a common symptom of gentrification and is a part of the issue with it. 
 
-#### 
+#### What outliers present issues for your analysis? How have you chosen to handle them? Why? 
+
+There were some very odd outliers. For example, there were a few instances where the number of bedrooms would be greater than 5, but rent would be under 10k. This is odd because if number of rooms correlates with rent. Then any room number greater than 5 should have a much higher rent. A few instances where number of bedrooms were zero also, mostly a studio apartment.
+Bathrooms also had the same problem as bedrooms. There were at least 3 instances where the number of bathrooms would be greater than 10, but the rent price would be below 10k. There’s also one instance where the number of bathrooms was 20, but the rent was below 10k.
+
+The square footage suffered the same problem as bathrooms and bedrooms. There were some instances where the square footage was zero, but had a rent prices. There were two instances where square footage was around 10k but rent was below 10k. 
+ We removed outliers multiple times, but due to our lack of experience it gave us a slightly higher mean square error. Which we didn’t know how to handle. In the end, we decided to keep the outliers as is because the mean squared error didn’t show significant change or it increased our mean squared error in some way. As a result, we decided on the random forest regressor. The random forest regressor gave us a mean square error we find acceptable. 
