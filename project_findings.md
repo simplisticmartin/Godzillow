@@ -44,3 +44,14 @@ There weren't many missing values to begin with, but we didn’t want to remove 
 #### Are there any other aspects of the data your exploration shows might be problematic?
 
 Other than some of the odd outliers. We didn’t run into anything problematic.
+
+#### Describe 5 features you think play the biggest role in your model. • How did you create these features? • How do you know these features are playing key roles? If your modeling process uses less than five features, explain why you think other features didn’t add value. 
+
+1. The External Dataset had a “Median Household Income” column that had a correlation of 0.3 with rent.
+2. Bathroom 0.61
+3. Size_sqft 0.65
+4. Bin -0.33
+5. BBl -0.34
+6. Floor_count 0.25
+
+The median Household income was chosen as the external dataset feature because income provides a positive correlation with rent and it allows people who rent to rent more premium buildings which also relates to 0.27 which makes them quite relatable and might even go hand in hand(similar reasoning). The number of bathrooms may be very relative to the (Square Footage)size of the place of rent. This is why we think there is such similar positive correlation(0.61 to 0.65) to rent. BIN(Building Identification Number negative correlation of -0.33 is negatively correlated with rent) gives us a rough estimate to borough or place which gives a relative area to where the place may be more affluent and other factors in the nearby region of the building. (if BBL stands of Borough, Building and lot, this would give us a similar correlation to BIN(negative correlation -0.34) also based on the same types of factors as BIN. Has_doorman has the least positive correlation out of the list of features we’ve selected but still relevant as we think it pertains to perhaps the location having a premium service.
