@@ -46,9 +46,6 @@ There weren't many missing values to begin with, but we didn’t want to remove 
 Other than some of the odd outliers. We didn’t run into anything problematic.
 
 #### Describe 5 features you think play the biggest role in your model. 
-#### How did you create these features? 
-#### How do you know these features are playing key roles? 
-#### If your modeling process uses less than five features, explain why you think other features didn’t add value. 
 
 1. The External Dataset had a “Median Household Income” column that had a correlation of 0.3 with rent.
 2. Bathroom 0.61
