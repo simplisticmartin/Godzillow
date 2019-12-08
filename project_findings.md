@@ -64,3 +64,15 @@ We selected a total of 6 classification variables. Thus, I make a hot encoding f
 #### Describe your methodology for selecting your model. Why do you think this type of model works well? (4) Metrics, Validation, and Evaluation. 3
 
 We began with a simple model of a linear regression, and we stuck with this until we could find another model to replace it which would perform better. This model turned out to be a random forest. The Mean Square Error of our final model ended up being 1,797,974. 
+
+#### How well do you think you model will perform on the hold out test set? How do you know? 
+
+I think our model will perform reasonably well. Our MSE is approximately 1.7 million. Which means that the error  was on average $1000 dollars for the rent values of test1.csv. We expected to see similar results in test3.csv because we split up our test data and worked to not overtrain our model.
+
+#### Is your model useful? Why or why not?
+
+Yes, it is useful because it can predict rent to an acceptable average error.
+
+#### Are there any special cases in which your model works particularly well or particularly poorly?
+
+Random Forest model are very prompt to overfitting the data. If we were to increase the number of features of our model, there is the possibility that the model will overfit the training dataset increase the mse and thus, giving unreliable predictions.
