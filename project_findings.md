@@ -61,3 +61,6 @@ The median Household income was chosen as the external dataset feature because i
 We selected a total of 6 classification variables. Thus, I make a hot encoding for all the classification variables first. Then we clean the data from empty and NaN values by filling them with media of the column. Once data was cleaned. We passed our dataset containing features and an array containing our target variable, rent. The random forest works by creating multiple decision trees that make predictions on different parts of our data. It thens averages those predictions into in final prediction for a particular input. Decision trees within the forest work perfectly for our classification variables. For our quantitative variables, we notice that many values repeat given similar conditions. Thus, they can be classified by a random forest despite error and still get an accurate prediction.
 
 
+#### Describe your methodology for selecting your model. Why do you think this type of model works well? (4) Metrics, Validation, and Evaluation. 3
+
+We began with a simple model of a linear regression, and we stuck with this until we could find another model to replace it which would perform better. This model turned out to be a random forest. The Mean Square Error of our final model ended up being 1,797,974. 
