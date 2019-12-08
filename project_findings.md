@@ -36,3 +36,11 @@ Bathrooms also had the same problem as bedrooms. There were at least 3 instances
 
 The square footage suffered the same problem as bathrooms and bedrooms. There were some instances where the square footage was zero, but had a rent prices. There were two instances where square footage was around 10k but rent was below 10k. 
  We removed outliers multiple times, but due to our lack of experience it gave us a slightly higher mean square error. Which we didn’t know how to handle. In the end, we decided to keep the outliers as is because the mean squared error didn’t show significant change or it increased our mean squared error in some way. As a result, we decided on the random forest regressor. The random forest regressor gave us a mean square error we find acceptable. 
+
+#### To what extent do missing values pose a challenge for your analysis? How have you chosen to handle them? Why?
+
+There weren't many missing values to begin with, but we didn’t want to remove any important data. Dropping the null values and filling the null values with the median of the columns didn’t affect the mean squared error by much; as a result, we filled most of the null values with the median for random forest. 
+
+#### Are there any other aspects of the data your exploration shows might be problematic?
+
+Other than some of the odd outliers. We didn’t run into anything problematic.
