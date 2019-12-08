@@ -76,3 +76,9 @@ Yes, it is useful because it can predict rent to an acceptable average error.
 #### Are there any special cases in which your model works particularly well or particularly poorly?
 
 Random Forest model are very prompt to overfitting the data. If we were to increase the number of features of our model, there is the possibility that the model will overfit the training dataset increase the mse and thus, giving unreliable predictions.
+
+### Conclusion 
+
+Our original intent was to use racial demographic information by zip code for our model, but the dataset we found gave us no correlation with rent whatsoever. It maybe that this particular dataset wasn’t useful. Instead we chose to include income data from the US Census Bureau. This data contained the median income of every zip code in the United States. With this in mind, it would follow logically that higher income areas would have higher rent costs. 
+
+After testing linear regression, polynomial regression, decision trees, k-nearest neighbors with test1.csv, and finally random forest. We found that random forest gave us the lowest mean square value for test1.csv.. Linear regression and polynomial regression are the simplest models, but gave us a mean square error of less than 4 million, while polynomial regression gave a mse of less than 3 million with test1.csv, we weren’t satisfied with the mean squared error because our original model was a simple linear regression which only gave us a mse of around 2 million for test2.csv. As a result, we used random forest; which gave us the lowest mean squared error against test1.csv. With this, we hope that our random forest model 
