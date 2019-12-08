@@ -24,3 +24,9 @@ Filling the null values lowered the mse for linear regression but increased it f
 - Our original intent was to find the racial demographic statistics based on zip code. We had hoped to find some correlation with rent and the racial demographics of the area. However, after running the racial demographic data frame through a heatmap. We saw there was no correlation with rent whatsoever. It may be that his particular dataset just wasn’t useful for us. Here is the link to the original dataset https://catalog.data.gov/dataset/demographic-statistics-by-zip-code-acfc9.
 - We chose to include income data from the US Census Bureau. This data contained the median income of every zip code in the United States. We merged this data with our original rent price data on zip codes so each data point would have an income level to associate with.
 - Our main reason for choosing income data was the idea that people who have more money would have more money available for spending on rent. With this theory in mind, it would follow logically that higher income areas would have higher rent costs
+
+#### Does the inclusion of this additional data raise any ethical considerations? 
+
+- There is an ethical problem with high income demographics moving into low income areas. Populations that until recent years paid lower rents because of their lower income suddenly have to pay more in rent because of higher income populations moving in. This is a common symptom of gentrification and is a part of the issue with it. 
+
+#### 
