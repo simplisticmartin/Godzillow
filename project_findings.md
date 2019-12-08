@@ -10,6 +10,7 @@ Use multiple models, heatmaps, and charts to make progress towards lowering the 
 - Test different models
 - Filled null values
 - Cleaned the data
+
 New data set gave us a lower mse for linear regression
 New data set gave us a lower mse for polynomial regression
 However, the new data set increased our mse for random forest by 200k, but was still the lowest mse out of all the models.
